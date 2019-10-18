@@ -1,0 +1,41 @@
+
+
+
+//      less-watch-compiler styles/less styles/css main.less
+
+///Will have the main variables mixins for the document
+
+@import "reset";
+@import "navigation";
+@import "header";
+
+//Variables
+
+
+@primaryblue : #3066BE;
+@secondaryblue: #6D9DC5;
+@primarygreen: #119DA4;
+@secondarygreen: #AEECEF;
+
+
+//mixins 
+.posabs {
+    position: absolute;
+}
+.flexcenter {
+    display: flex;
+    align-items: center;
+}
+
+/// Global settings for documents
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    font-family: 'Luckiest Guy', cursive;
+}

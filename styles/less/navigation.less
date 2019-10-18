@@ -1,0 +1,32 @@
+.container-nav {
+    
+    font-size: 1.4rem;
+    height: 6vh;
+    width: 100%;
+    background-color: @primaryblue;
+    
+    nav {
+        .flexcenter();
+        height: 100%;
+        padding: 0 24px;
+        justify-content: flex-end;
+        .title{
+            margin-right: auto;
+        }
+        
+        a {
+            text-decoration: none;
+            padding: 0 6px;
+            
+            &:first-child{
+                font-size: 3rem;
+            }
+            &:visited{
+                color: @primarygreen;
+            }
+            &:hover{
+                color: @secondarygreen;
+            }
+        }
+    }
+}
