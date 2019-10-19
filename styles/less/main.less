@@ -6,27 +6,56 @@
 ///Will have the GLOBAL variables mixins, rule sets for the document
 
 @import "reset";
+@import "navigation";
+@import "header";
 @import "index";
+@import "aboutus";
 
-//Variables
+
+//////////////////////////////////////////////////////////////////
+/////////////////////////Variables////////////////////////////
+////////////////////////////////////////////////////////////////
 
 
 @primaryblue : #3066BE;
 @secondaryblue: #6D9DC5;
-@primarygreen: #119DA4;
-@secondarygreen: #AEECEF;
+@primarygreen: rgb(76, 134, 51);
+//@secondarygreen: ;
+@primaryaqua: #119DA4;
+@secondaryaqua: #AEECEF;
+@primarygold: rgb(240, 180, 123);
 
 
-//mixins 
-.posabs {
+//////////////////////////////////////////////////////////////////
+//////////////////////////MIXINS /////////////////////////////////
+//////////////////////////////////////////////////////////////////
+.animalset {
+    width: 10%;
     position: absolute;
+}
+.posabs(){
+    position: absolute;
+}
+.posSet(@leftpos,@toppos, @widthSize){
+    position: absolute;
+    width: @widthSize;
+    left: @leftpos;
+    top: @toppos;
+    text-shadow: .2em .1em .7em rgb(8, 8, 8) ;
 }
 .flexcenter {
     display: flex;
     align-items: center;
 }
-
-/// Global settings for documents
+.contentbackground{
+    background-color: @primarygreen;
+    width: 100%;
+    margin: -10px 0;
+    height: 100vh;
+}
+//////////////////////////////////////////////////////////////////
+/////////////////// Global settings for documents////////////////
+///////////////////////////////////////////////////////////////////
 * {
     box-sizing: border-box;
 }
@@ -38,3 +67,15 @@ html {
 html, body {
     font-family: 'Luckiest Guy', cursive;
 }
+
+a{   
+    
+    &:visited{
+        color: @secondaryaqua;
+    }
+}
+button{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 62.5%;
+}
+

@@ -1,0 +1,31 @@
+.container-nav {
+    
+    font-size: 1.8rem;
+    height: auto;
+    max-height: 51px;
+    width: 100%;
+    background-color: @primaryblue;
+    
+    nav {
+        .flexcenter();
+        height: 100%;
+        padding: 0 24px;
+        justify-content: flex-end;
+        .title{
+            margin-right: auto;
+        }
+        
+        a {   
+            padding: 0 6px;
+            text-decoration: none;
+            color: @secondaryaqua;
+            &:hover{
+                color: @primaryaqua;
+            }
+            
+            &:first-child{
+                font-size: 3.4rem;
+            }
+        }
+    }
+}

@@ -1,80 +1,68 @@
-.container-nav {
-    
-    font-size: 1.4rem;
-    height: 6vh;
-    width: 100%;
-    background-color: @primaryblue;
-    
-    nav {
-        .flexcenter();
-        height: 100%;
-        padding: 0 24px;
-        justify-content: flex-end;
-        .title{
-            margin-right: auto;
-        }
-        
-        a {
-            text-decoration: none;
-            padding: 0 6px;
-            
-            &:first-child{
-                font-size: 3rem;
-            }
-            &:visited{
-                color: @primarygreen;
-            }
-            &:hover{
-                color: @secondarygreen;
-            }
-        }
-    }
-}
-
 .container-header {
-    position: relative;
-    height: auto;
-    width: 100%;
-    font-size: 2rem;
-    img {
-        width: 100%;
-        height: auto;
-    }
+
     .farm_house{
-        .posabs();
-        right: 27%;
-        width: 16%;
-        bottom: 23%;
+        .posSet(59%, 58%,10%);
     }
     .horse_pic{
-        width: 10%;
-        .posabs();
-        left: 15%;
-        bottom: 25%;
+        .posSet(15%, 60%, 10%);
         
     }
     .cow_pic{
-        width: 10%;
-        .posabs();
-        right: 20%;
-        bottom: 20%;
+        .posSet(80%, 62%,10%);
+    }
+    .pig_pic{
+        .posSet(48%, 62%,10%);
     }
     h2{
-        width: 60%;
-        font-size: 2vw;
+        font-size: 1.7vw;
         letter-spacing: .2em;
-        color: rgb(240, 180, 123);
-        .posabs();
-        left: 5%;
-        top: 40%;
+        color: @primarygold;
+        .posSet(5%, 40%, 60%);
+        
+    }
+    .header-button{
+        .posSet(19%, 47%, 10%);
+        background: @secondaryaqua;
+        padding: 8px 10px;
+        border-radius: 10px;
+        border: 1px solid @primaryaqua;
+        font-size: 1.4vw;
+        color: @primaryblue;
+        &:hover{
+            background: @primaryaqua;
+            cursor: pointer;
+            color: lighten(@primarygold, 20%)
+        }
+    }
+    .header-p{
+        .posSet(0, 90%, 100%);
+        margin: auto;
+        text-align: center;
+        color: @primarygold;
+        font-size: 2.1vw;
     }
 }
 
 .container-features{
+    .contentbackground();
     display: flex;
-    margin: -10px 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(68, 134, 35);
-    
+    flex-direction: row;
+    padding: 10% 5%;
+    justify-content: space-between;
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 28%;
+        .top{
+            color: @secondaryaqua;
+            align-self: center;
+            padding-bottom: 20px;
+            font-size: 2.3vw;
+        }
+        .bottom{
+            color: darken(@secondaryaqua, 20%);
+            font-size: 1.6vw;
+            line-height: 140%;
+        }
+    }
 }

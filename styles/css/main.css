@@ -125,8 +125,9 @@ a img {
   outline: 0;
 }
 .container-nav {
-  font-size: 1.4rem;
-  height: 6vh;
+  font-size: 1.8rem;
+  height: auto;
+  max-height: 51px;
   width: 100%;
   background-color: #3066BE;
 }
@@ -141,17 +142,15 @@ a img {
   margin-right: auto;
 }
 .container-nav nav a {
-  text-decoration: none;
   padding: 0 6px;
-}
-.container-nav nav a:first-child {
-  font-size: 3rem;
-}
-.container-nav nav a:visited {
-  color: #119DA4;
+  text-decoration: none;
+  color: #AEECEF;
 }
 .container-nav nav a:hover {
-  color: #AEECEF;
+  color: #119DA4;
+}
+.container-nav nav a:first-child {
+  font-size: 3.4rem;
 }
 .container-header {
   position: relative;
@@ -159,50 +158,133 @@ a img {
   width: 100%;
   font-size: 2rem;
 }
-.container-header img {
+.container-header .background-img {
   width: 100%;
   height: auto;
 }
 .container-header .farm_house {
   position: absolute;
-  right: 27%;
-  width: 16%;
-  bottom: 23%;
+  width: 10%;
+  left: 59%;
+  top: 58%;
+  text-shadow: 0.2em 0.1em 0.7em #080808;
 }
 .container-header .horse_pic {
-  width: 10%;
   position: absolute;
+  width: 10%;
   left: 15%;
-  bottom: 25%;
+  top: 60%;
+  text-shadow: 0.2em 0.1em 0.7em #080808;
 }
 .container-header .cow_pic {
-  width: 10%;
   position: absolute;
-  right: 20%;
-  bottom: 20%;
+  width: 10%;
+  left: 80%;
+  top: 62%;
+  text-shadow: 0.2em 0.1em 0.7em #080808;
+}
+.container-header .pig_pic {
+  position: absolute;
+  width: 10%;
+  left: 48%;
+  top: 62%;
+  text-shadow: 0.2em 0.1em 0.7em #080808;
 }
 .container-header h2 {
-  width: 60%;
-  font-size: 2vw;
+  font-size: 1.7vw;
   letter-spacing: 0.2em;
   color: #f0b47b;
   position: absolute;
+  width: 60%;
   left: 5%;
   top: 40%;
+  text-shadow: 0.2em 0.1em 0.7em #080808;
+}
+.container-header .header-button {
+  position: absolute;
+  width: 10%;
+  left: 19%;
+  top: 47%;
+  text-shadow: 0.2em 0.1em 0.7em #080808;
+  background: #AEECEF;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #119DA4;
+  font-size: 1.4vw;
+  color: #3066BE;
+}
+.container-header .header-button:hover {
+  background: #119DA4;
+  cursor: pointer;
+  color: #fae8d7;
+}
+.container-header .header-p {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 90%;
+  text-shadow: 0.2em 0.1em 0.7em #080808;
+  margin: auto;
+  text-align: center;
+  color: #f0b47b;
+  font-size: 2.1vw;
 }
 .container-features {
-  display: flex;
-  margin: -10px 0;
+  background-color: #4c8633;
   width: 100%;
+  margin: -10px 0;
   height: 100vh;
-  background-color: #448623;
+  display: flex;
+  flex-direction: row;
+  padding: 10% 5%;
+  justify-content: space-between;
 }
-.posabs {
+.container-features .card {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+}
+.container-features .card .top {
+  color: #AEECEF;
+  align-self: center;
+  padding-bottom: 20px;
+  font-size: 2.3vw;
+}
+.container-features .card .bottom {
+  color: #59d8de;
+  font-size: 1.6vw;
+  line-height: 140%;
+}
+.about .container-header p {
+  position: absolute;
+  width: auto;
+  left: 10%;
+  top: 50%;
+  text-shadow: 0.2em 0.1em 0.7em #080808;
+  font-size: 1.3vw;
+  color: #AEECEF;
+}
+.about .container-people {
+  background-color: #4c8633;
+  width: 100%;
+  margin: -10px 0;
+  height: 100vh;
+  display: flex;
+  padding: 10% 5%;
+}
+.animalset {
+  width: 10%;
   position: absolute;
 }
 .flexcenter {
   display: flex;
   align-items: center;
+}
+.contentbackground {
+  background-color: #4c8633;
+  width: 100%;
+  margin: -10px 0;
+  height: 100vh;
 }
 * {
   box-sizing: border-box;
@@ -213,4 +295,11 @@ html {
 html,
 body {
   font-family: 'Luckiest Guy', cursive;
+}
+a:visited {
+  color: #AEECEF;
+}
+button {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 62.5%;
 }
