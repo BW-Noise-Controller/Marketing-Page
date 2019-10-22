@@ -1,15 +1,56 @@
 .about{
     .container-header{
         p{
-            .posSet(10%, 50%, auto);
-            font-size: 1.3vw;
+            .posSet(10%, 50%, 80%);
+            font-size: 2.5rem;
             color: @secondaryaqua;
+            text-shadow: .1em .1em .6em rgb(8, 8, 8);
+            
         }
     }
 
-    .container-people{
+    .container-aboutus{
         .contentbackground();
-        display: flex;
-        padding: 10% 5%;
+        padding: 7% 5%;
+        h2{
+            text-align: center;
+            font-size: 34px;
+            color: @primarygold;
+            text-shadow: .1em .1em .6em rgb(8, 8, 8);
+            margin-bottom: 60px;
+        }
+        .container-people{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .card{
+                width: 320px;
+                height: 480px;
+                padding: 40px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .name{
+                    text-align: center;
+                    font-size: 2.5rem;
+                    color: @primarygold;
+                    text-shadow: .1em .1em .6em rgb(8, 8, 8);
+                    h3{
+                        letter-spacing: .2em;
+                    }
+                    padding-bottom: 12px;
+                }
+                .pic{
+                    height: 260px;
+                    width: 260px;
+                    border-radius: 45px;
+                }
+                .about{
+                    padding: 20px 0;
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }

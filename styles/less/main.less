@@ -23,7 +23,7 @@
 //@secondarygreen: ;
 @primaryaqua: #119DA4;
 @secondaryaqua: #AEECEF;
-@primarygold: rgb(240, 180, 123);
+@primarygold: rgb(255, 133, 19);
 
 
 //////////////////////////////////////////////////////////////////
@@ -33,15 +33,12 @@
     width: 10%;
     position: absolute;
 }
-.posabs(){
-    position: absolute;
-}
+
 .posSet(@leftpos,@toppos, @widthSize){
     position: absolute;
     width: @widthSize;
     left: @leftpos;
     top: @toppos;
-    text-shadow: .2em .1em .7em rgb(8, 8, 8) ;
 }
 .flexcenter {
     display: flex;
@@ -51,7 +48,11 @@
     background-color: @primarygreen;
     width: 100%;
     margin: -10px 0;
-    height: 100vh;
+    height: auto;
+}
+.main-text{
+    color: @primarygold;
+    text-shadow: .1em .1em .6em rgb(8, 8, 8);
 }
 //////////////////////////////////////////////////////////////////
 /////////////////// Global settings for documents////////////////
@@ -66,6 +67,7 @@ html {
 
 html, body {
     font-family: 'Luckiest Guy', cursive;
+    background: @primarygreen;
 }
 
 a{   

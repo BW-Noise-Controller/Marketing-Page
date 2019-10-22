@@ -14,17 +14,19 @@
         .posSet(48%, 62%,10%);
     }
     h2{
-        font-size: 1.7vw;
+        font-size: 2.4vw;
         letter-spacing: .2em;
-        color: @primarygold;
-        .posSet(5%, 40%, 60%);
+        .main-text();
+        .posSet(5%, 40%, 80%);
         
     }
     .header-button{
-        .posSet(19%, 47%, 10%);
+        .posSet(76%, 40%, 10%);
+        height: 10%;
         background: @secondaryaqua;
-        padding: 8px 10px;
-        border-radius: 10px;
+        text-align: center;
+        // padding: 20px 20px;
+        border-radius: 100px;
         border: 1px solid @primaryaqua;
         font-size: 1.4vw;
         color: @primaryblue;
@@ -38,7 +40,7 @@
         .posSet(0, 90%, 100%);
         margin: auto;
         text-align: center;
-        color: @primarygold;
+        .main-text();
         font-size: 2.1vw;
     }
 }
@@ -48,16 +50,21 @@
     display: flex;
     flex-direction: row;
     padding: 10% 5%;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     .card{
         display: flex;
         flex-direction: column;
         width: 28%;
+        padding: 8px 10px;
+        border: 2px solid @primaryaqua;
+        min-width: 400px;
         .top{
             color: @secondaryaqua;
             align-self: center;
             padding-bottom: 20px;
             font-size: 2.3vw;
+            text-shadow: .1em .1em .6em rgb(8, 8, 8);
         }
         .bottom{
             color: darken(@secondaryaqua, 20%);

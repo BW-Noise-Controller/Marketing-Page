@@ -167,48 +167,44 @@ a img {
   width: 10%;
   left: 59%;
   top: 58%;
-  text-shadow: 0.2em 0.1em 0.7em #080808;
 }
 .container-header .horse_pic {
   position: absolute;
   width: 10%;
   left: 15%;
   top: 60%;
-  text-shadow: 0.2em 0.1em 0.7em #080808;
 }
 .container-header .cow_pic {
   position: absolute;
   width: 10%;
   left: 80%;
   top: 62%;
-  text-shadow: 0.2em 0.1em 0.7em #080808;
 }
 .container-header .pig_pic {
   position: absolute;
   width: 10%;
   left: 48%;
   top: 62%;
-  text-shadow: 0.2em 0.1em 0.7em #080808;
 }
 .container-header h2 {
-  font-size: 1.7vw;
+  font-size: 2.4vw;
   letter-spacing: 0.2em;
-  color: #f0b47b;
+  color: #ff8513;
+  text-shadow: 0.1em 0.1em 0.6em #080808;
   position: absolute;
-  width: 60%;
+  width: 80%;
   left: 5%;
   top: 40%;
-  text-shadow: 0.2em 0.1em 0.7em #080808;
 }
 .container-header .header-button {
   position: absolute;
   width: 10%;
-  left: 19%;
-  top: 47%;
-  text-shadow: 0.2em 0.1em 0.7em #080808;
+  left: 76%;
+  top: 40%;
+  height: 10%;
   background: #AEECEF;
-  padding: 8px 10px;
-  border-radius: 10px;
+  text-align: center;
+  border-radius: 100px;
   border: 1px solid #119DA4;
   font-size: 1.4vw;
   color: #3066BE;
@@ -216,39 +212,44 @@ a img {
 .container-header .header-button:hover {
   background: #119DA4;
   cursor: pointer;
-  color: #fae8d7;
+  color: #ffba79;
 }
 .container-header .header-p {
   position: absolute;
   width: 100%;
   left: 0;
   top: 90%;
-  text-shadow: 0.2em 0.1em 0.7em #080808;
   margin: auto;
   text-align: center;
-  color: #f0b47b;
+  color: #ff8513;
+  text-shadow: 0.1em 0.1em 0.6em #080808;
   font-size: 2.1vw;
 }
 .container-features {
   background-color: #4c8633;
   width: 100%;
   margin: -10px 0;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   padding: 10% 5%;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .container-features .card {
   display: flex;
   flex-direction: column;
   width: 28%;
+  padding: 8px 10px;
+  border: 2px solid #119DA4;
+  min-width: 400px;
 }
 .container-features .card .top {
   color: #AEECEF;
   align-self: center;
   padding-bottom: 20px;
   font-size: 2.3vw;
+  text-shadow: 0.1em 0.1em 0.6em #080808;
 }
 .container-features .card .bottom {
   color: #59d8de;
@@ -257,20 +258,59 @@ a img {
 }
 .about .container-header p {
   position: absolute;
-  width: auto;
+  width: 80%;
   left: 10%;
   top: 50%;
-  text-shadow: 0.2em 0.1em 0.7em #080808;
-  font-size: 1.3vw;
+  font-size: 2.5rem;
   color: #AEECEF;
+  text-shadow: 0.1em 0.1em 0.6em #080808;
 }
-.about .container-people {
+.about .container-aboutus {
   background-color: #4c8633;
   width: 100%;
   margin: -10px 0;
-  height: 100vh;
+  height: auto;
+  padding: 7% 5%;
+}
+.about .container-aboutus h2 {
+  text-align: center;
+  font-size: 34px;
+  color: #ff8513;
+  text-shadow: 0.1em 0.1em 0.6em #080808;
+  margin-bottom: 60px;
+}
+.about .container-aboutus .container-people {
   display: flex;
-  padding: 10% 5%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.about .container-aboutus .container-people .card {
+  width: 320px;
+  height: 480px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about .container-aboutus .container-people .card .name {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff8513;
+  text-shadow: 0.1em 0.1em 0.6em #080808;
+  padding-bottom: 12px;
+}
+.about .container-aboutus .container-people .card .name h3 {
+  letter-spacing: 0.2em;
+}
+.about .container-aboutus .container-people .card .pic {
+  height: 260px;
+  width: 260px;
+  border-radius: 45px;
+}
+.about .container-aboutus .container-people .card .about {
+  padding: 20px 0;
+  font-size: 2rem;
 }
 .animalset {
   width: 10%;
@@ -284,7 +324,11 @@ a img {
   background-color: #4c8633;
   width: 100%;
   margin: -10px 0;
-  height: 100vh;
+  height: auto;
+}
+.main-text {
+  color: #ff8513;
+  text-shadow: 0.1em 0.1em 0.6em #080808;
 }
 * {
   box-sizing: border-box;
@@ -295,6 +339,7 @@ html {
 html,
 body {
   font-family: 'Luckiest Guy', cursive;
+  background: #4c8633;
 }
 a:visited {
   color: #AEECEF;
