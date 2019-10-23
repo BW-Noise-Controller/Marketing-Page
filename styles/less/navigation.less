@@ -11,21 +11,34 @@
         height: 100%;
         padding: 0 24px;
         justify-content: flex-end;
+        
         .title{
             margin-right: auto;
+            font-size: 3.4rem;
+            @media @tablet{
+                margin: 0;
+                width: 100%;
+                flex-basis: 100%;
+                text-align: center;
+            }
+            @media @mobile{
+                font-size: 5vw;
+            }
         }
         
         a {   
-            padding: 0 6px;
-            text-decoration: none;
+            padding: 0 8px;
             color: @secondaryaqua;
             &:hover{
-                color: @primaryaqua;
-            }
-            
-            &:first-child{
-                font-size: 3.4rem;
+                color: darken(@secondaryaqua,20%);
             }
         }
+        @media @tablet{
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+    @media @tablet{
+        max-height: 78px;
     }
 }

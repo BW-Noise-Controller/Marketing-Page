@@ -8,7 +8,7 @@
 @import "reset";
 @import "navigation";
 @import "header";
-@import "index";
+@import "home-page";
 @import "aboutus";
 
 
@@ -25,7 +25,8 @@
 @secondaryaqua: #AEECEF;
 @primarygold: rgb(255, 133, 19);
 
-
+@mobile: ~"(max-width: 500px)";
+@tablet: ~"(max-width: 800px)";
 //////////////////////////////////////////////////////////////////
 //////////////////////////MIXINS /////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -54,6 +55,9 @@
     color: @primarygold;
     text-shadow: .1em .1em .6em rgb(8, 8, 8);
 }
+
+
+
 //////////////////////////////////////////////////////////////////
 /////////////////// Global settings for documents////////////////
 ///////////////////////////////////////////////////////////////////
@@ -70,10 +74,14 @@ html, body {
     background: @primarygreen;
 }
 
-a{   
-    
+a{    
+    text-decoration: none;
     &:visited{
         color: @secondaryaqua;
+    }
+    &:hover{
+        color: darken(@secondaryaqua,20%);
+        
     }
 }
 button{

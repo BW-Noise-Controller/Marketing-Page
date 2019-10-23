@@ -140,17 +140,38 @@ a img {
 }
 .container-nav nav .title {
   margin-right: auto;
+  font-size: 3.4rem;
+}
+@media (max-width: 800px) {
+  .container-nav nav .title {
+    margin: 0;
+    width: 100%;
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .container-nav nav .title {
+    font-size: 5vw;
+  }
 }
 .container-nav nav a {
-  padding: 0 6px;
-  text-decoration: none;
+  padding: 0 8px;
   color: #AEECEF;
 }
 .container-nav nav a:hover {
-  color: #119DA4;
+  color: #59d8de;
 }
-.container-nav nav a:first-child {
-  font-size: 3.4rem;
+@media (max-width: 800px) {
+  .container-nav nav {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 800px) {
+  .container-nav {
+    max-height: 78px;
+  }
 }
 .container-header {
   position: relative;
@@ -241,7 +262,6 @@ a img {
   flex-direction: column;
   width: 28%;
   padding: 8px 10px;
-  border: 2px solid #119DA4;
   min-width: 400px;
 }
 .container-features .card .top {
@@ -256,14 +276,30 @@ a img {
   font-size: 1.6vw;
   line-height: 140%;
 }
+@media (max-width: 800px) {
+  .container-features .card {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .container-features {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .about .container-header p {
   position: absolute;
   width: 80%;
   left: 10%;
   top: 50%;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   color: #AEECEF;
   text-shadow: 0.1em 0.1em 0.6em #080808;
+}
+@media (max-width: 800px) {
+  .about .container-header p {
+    font-size: 3.5vw;
+  }
 }
 .about .container-aboutus {
   background-color: #4c8633;
@@ -286,7 +322,7 @@ a img {
 }
 .about .container-aboutus .container-people .card {
   width: 320px;
-  height: 480px;
+  height: auto;
   padding: 40px 0;
   display: flex;
   justify-content: center;
@@ -311,6 +347,11 @@ a img {
 .about .container-aboutus .container-people .card .about {
   padding: 20px 0;
   font-size: 2rem;
+  height: 240px;
+}
+.about .container-aboutus .container-people .card .about a {
+  width: 100%;
+  text-align: center;
 }
 .animalset {
   width: 10%;
@@ -341,8 +382,14 @@ body {
   font-family: 'Luckiest Guy', cursive;
   background: #4c8633;
 }
+a {
+  text-decoration: none;
+}
 a:visited {
   color: #AEECEF;
+}
+a:hover {
+  color: #59d8de;
 }
 button {
   font-family: 'Luckiest Guy', cursive;

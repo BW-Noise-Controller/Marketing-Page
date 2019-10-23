@@ -2,10 +2,12 @@
     .container-header{
         p{
             .posSet(10%, 50%, 80%);
-            font-size: 2.5rem;
+            font-size: 3.2rem;
             color: @secondaryaqua;
             text-shadow: .1em .1em .6em rgb(8, 8, 8);
-            
+            @media @tablet{
+                font-size: 3.5vw;
+            }
         }
     }
 
@@ -25,7 +27,7 @@
             justify-content: space-around;
             .card{
                 width: 320px;
-                height: 480px;
+                height: auto;
                 padding: 40px 0;
                 display: flex;
                 justify-content: center;
@@ -49,6 +51,11 @@
                 .about{
                     padding: 20px 0;
                     font-size: 2rem;
+                    height: 240px;
+                    a{
+                        width: 100%;
+                        text-align: center;
+                    }
                 }
             }
         }
