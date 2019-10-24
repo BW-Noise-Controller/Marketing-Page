@@ -56,6 +56,58 @@
     text-shadow: .1em .1em .6em rgb(8, 8, 8);
 }
 
+.animate(@name,@duration){
+    animation: @name @duration linear 1;
+}
+
+
+//////////////////////////////////////////////////////////////////
+////////////////KEYFRAMES-ANIMATIONS////////////////////////////
+//////////////////////////////////////////////////////////////////
+@keyframes slideright{
+    0%{
+        left: -12%;
+    }
+    20%{
+        
+        transform: rotate(-20deg);
+    }
+    40%{
+        transform: rotate(20deg);
+    }
+    60%{  
+        transform: rotate(-20deg);
+    }
+    80%{
+        transform: rotate(20deg);
+    }
+    100%{
+        left: none;
+        transform: rotate(0deg);
+    }
+}
+@keyframes slideleft{
+    0%{
+        left: 110%;
+    }
+    20%{
+        
+        transform: rotate(20deg);
+    }
+    40%{
+        transform: rotate(-20deg);
+    }
+    60%{  
+        transform: rotate(20deg);
+    }
+    80%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        left: none;
+        transform: rotate(0deg);
+    }
+}
 
 
 //////////////////////////////////////////////////////////////////

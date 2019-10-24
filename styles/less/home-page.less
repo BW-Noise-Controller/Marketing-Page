@@ -5,14 +5,16 @@
     }
     .horse_pic{
         .posSet(15%, 60%, 10%);
-        
+        .animate(slideright, 2s);
     }
     .cow_pic{
         .posSet(80%, 62%,10%);
+        .animate(slideleft,2s);
         
     }
     .pig_pic{
         .posSet(48%, 62%,10%);
+        .animate(slideleft,3s);
     }
     h2{
         font-size: 2.4vw;
@@ -66,19 +68,26 @@
             padding-bottom: 20px;
             font-size: 2.3vw;
             text-shadow: .1em .1em .6em rgb(8, 8, 8);
+            @media @tablet{
+                font-size: 3rem;
+            }
         }
         .bottom{
             color: darken(@secondaryaqua, 20%);
             font-size: 1.6vw;
             line-height: 140%;
+            @media @tablet{
+                text-align: center;
+                font-size: 2rem;
+            }
         }
         @media @tablet{
-            width: 100%;
+            width: 80%;
         }
     }
     @media @tablet{
         flex-direction: column;
-        justify-content: center;
+        align-content: center;
 
     }
 }

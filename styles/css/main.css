@@ -194,18 +194,21 @@ a img {
   width: 10%;
   left: 15%;
   top: 60%;
+  animation: slideright 2s linear 1;
 }
 .container-header .cow_pic {
   position: absolute;
   width: 10%;
   left: 80%;
   top: 62%;
+  animation: slideleft 2s linear 1;
 }
 .container-header .pig_pic {
   position: absolute;
   width: 10%;
   left: 48%;
   top: 62%;
+  animation: slideleft 3s linear 1;
 }
 .container-header h2 {
   font-size: 2.4vw;
@@ -271,20 +274,31 @@ a img {
   font-size: 2.3vw;
   text-shadow: 0.1em 0.1em 0.6em #080808;
 }
+@media (max-width: 800px) {
+  .container-features .card .top {
+    font-size: 3rem;
+  }
+}
 .container-features .card .bottom {
   color: #59d8de;
   font-size: 1.6vw;
   line-height: 140%;
 }
 @media (max-width: 800px) {
+  .container-features .card .bottom {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
   .container-features .card {
-    width: 100%;
+    width: 80%;
   }
 }
 @media (max-width: 800px) {
   .container-features {
     flex-direction: column;
-    justify-content: center;
+    align-content: center;
   }
 }
 .about .container-header p {
@@ -370,6 +384,48 @@ a img {
 .main-text {
   color: #ff8513;
   text-shadow: 0.1em 0.1em 0.6em #080808;
+}
+@keyframes slideright {
+  0% {
+    left: -12%;
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(-20deg);
+  }
+  80% {
+    transform: rotate(20deg);
+  }
+  100% {
+    left: none;
+    transform: rotate(0deg);
+  }
+}
+@keyframes slideleft {
+  0% {
+    left: 110%;
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  80% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    left: none;
+    transform: rotate(0deg);
+  }
 }
 * {
   box-sizing: border-box;
